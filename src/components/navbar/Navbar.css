@@ -1,0 +1,109 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    background-color: #272626;
+    color: white;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 248);
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    width: auto;
+    padding-right: 10px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-links li a:hover {
+    color: rgb(233, 177, 75);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .nav-right a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .btn-booking {
+    background-color: transparent;
+    color: rgb(245, 153, 47);
+    border: 1.5px solid white;
+    padding: 5px 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+     
+  /* === Responsiv navbar för mobil === */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .logo {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  
+    .nav-links {
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      padding: 0;
+    }
+  
+    .nav-links li {
+      width: auto;
+    }
+  
+    .nav-links li a {
+      display: inline-block;
+      padding: 8px 12px;
+      text-align: center;
+    }
+  
+    .nav-right {
+      display: none;
+    }
+  
+    .btn-booking {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+  
