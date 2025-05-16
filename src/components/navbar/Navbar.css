@@ -46,13 +46,16 @@
   .nav-right {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     font-size: 0.9rem;
+    margin-right: 5px;
+    justify-content: space-between
   }
   
   .nav-right a {
     text-decoration: none;
     color: white;
+    
   }
   
   .btn-booking {
