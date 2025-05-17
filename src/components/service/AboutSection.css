@@ -1,0 +1,18 @@
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  background: #f5f5f5;
+  flex-wrap: wrap;
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,46 @@
+.service-card {
+    width: 30%;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .service-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    margin: 15px 0;
+  }
+  
+  .service-card button {
+    background-color: orange;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  /* Mobil */
+  @media (max-width: 768px) {
+    .service-card {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .service-card h3 {
+      font-size: 1.1rem;
+    }
+  
+    .service-card p {
+      font-size: 0.95rem;
+    }
+  
+    .service-card button {
+      width: 100%;
+    }
+  }
+  

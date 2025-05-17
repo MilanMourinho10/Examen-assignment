@@ -5,6 +5,7 @@ import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 
 import Home from './pages/Home';
+import PriceList from './pages/PriceList';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-         
+           <Route path="/priser-tjanster" element={<PriceList />} />
         </Routes>
        <Footer/>
        
