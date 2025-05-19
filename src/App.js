@@ -6,6 +6,8 @@ import Footer from './components/footer/Footer';
 
 import Home from './pages/Home';
 import PriceList from './pages/PriceList';
+import Contact from './pages/Contact';
+
 
 function App() {
   return (
@@ -15,7 +17,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-           <Route path="/priser-tjanster" element={<PriceList />} />
+          <Route path="/priser-tjanster" element={<PriceList />} />
+          <Route path="/kontakt" element={<Contact/>} />
         </Routes>
        <Footer/>
        

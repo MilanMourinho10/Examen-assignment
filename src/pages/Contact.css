@@ -1,0 +1,65 @@
+.header {
+    height: 100vh;
+    background-image: url("/public/images/herobackground.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+  }
+    
+    .header-content {
+      max-width: 650px;
+      background: rgba(49, 48, 48, 0.85); 
+       border-radius: 50px;
+       height: 350px;
+    }
+    
+    .header-content h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    
+    .header-content p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+    }
+    
+    .btn-main {
+      background-color: orange;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    @media (max-width: 1024px) {
+      .header {
+        min-height: 100vh;
+        padding: 1.5rem;
+      }
+    
+      .header-content {
+        padding: 1.5rem;
+        border-radius: 20px;
+      }
+    
+      .header-content h1 {
+        font-size: 2rem;
+      }
+    
+      .header-content p {
+        font-size: 1rem;
+      }
+    
+      .btn-main {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+      }
+    }
+    

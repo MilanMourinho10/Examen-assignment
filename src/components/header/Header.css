@@ -31,12 +31,58 @@
   }
   
   .btn-main {
-    background-color: orange;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    cursor: pointer;
-  }
+  padding: 15px 30px;       
+  background-color: #f5992f; 
+  color: #fff;               
+  border: 2px solid transparent; 
+  cursor: pointer;
+  border-radius: 8px;       
+  font-size: 1rem;          
+  font-weight: 600;         
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-main:hover {
+  background-color: #e5891f;   
+  border-color: #fff;         
+  transform: scale(1.05);      
+}
+
+.btn-main:active {
+  background-color: #d0781a;   
+  transform: scale(0.98);      
+}
+
+.btn-main:focus {
+  outline: none;               
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+}.btn-main {
+  padding: 15px 30px;        
+  background-color: #f5992f; 
+  color: #fff;               
+  border: 2px solid transparent; 
+  cursor: pointer;
+  border-radius: 8px;       
+  font-size: 1rem;          
+  font-weight: 600;        
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-main:hover {
+  background-color: #e5891f;   
+  border-color: #fff;         
+  transform: scale(1.05);      
+}
+
+.btn-main:active {
+  background-color: #d0781a;   
+  transform: scale(0.98);      
+}
+
+.btn-main:focus {
+  outline: none;              
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+}
   
   /* Mobile: max 768px */
 @media (max-width: 768px) {
