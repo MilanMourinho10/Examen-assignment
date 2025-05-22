@@ -6,7 +6,7 @@ const services = [
   { image: "/images/carwash.jpg", title: "Biltvätt" },
   
   { image: "/images/tirestorage.jpg", title: "Däckverkstad" },
-  { image: "/images/tirechange.jpg", title: "Däckskifte/Däckbyte" },
+  { image: "/images/tirechange.jpg", title: "Däckbyte" },
 ];
 
 const Services = () => {

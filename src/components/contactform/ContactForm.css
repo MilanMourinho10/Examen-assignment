@@ -2,7 +2,7 @@
 .contact-container {
       
     background-color: rgb(22, 18, 18);
-    width: 100%;
+    width: 96%;
     min-height: 50vh;
     display: flex;
     justify-content: center;
@@ -51,7 +51,7 @@
     background-color: orange;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
@@ -144,7 +144,7 @@
     .contact-info,
     .contact-form {
       max-width: 100%;
-      width: 100%;
+      width: 96%;
       padding: 20px;
     }
   

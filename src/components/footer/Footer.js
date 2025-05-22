@@ -12,7 +12,7 @@ const Footer = () => {
           <h2>Meguiars Sollentuna</h2>
           <p>Bilvårdsgatan 12, 191 62 Sollentuna</p>
           <p>Telefon: <a href="tel:0854902549">08-549 02 549</a></p>
-          <p>E-post: <a href="mailto:kontakt@meguiarssollentuna"></a>meguiarssollentuna@outlook.com</p>
+          <p>E-post: <a href="mailto:kontakt@meguiarssollentuna">meguiarssollentuna@outlook.com</a></p>
         </div>
 
         <div className="footer-links">

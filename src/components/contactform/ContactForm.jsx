@@ -1,8 +1,33 @@
 import React, { useRef } from "react";
 import "./ContactForm.css";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const form = useRef();
+   
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_5ofupp8",        // ✅ Ditt service-ID
+        "template_yhfvaio",       // ✅ Ditt template-ID
+        form.current,             
+        "EXL_FZ2SN8jDzelxD"       // ✅ Din public key
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Meddelandet har skickats! ✅");
+          e.target.reset(); // Rensa formuläret
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Något gick fel ❌");
+        }
+      );
+  };
 
  
 
@@ -12,10 +37,12 @@ const ContactForm = () => {
         <div className="contact-info">
           <h2>OM MEGUIARS SOLLENTUNA</h2>
           <p>
-            Meguiars Sollentuna AB grundades 2012...
-            Meguiars Sollentuna AB grundades 2012...
+           Vi är en professionell biltvätt och däckservice i hjärtat av Sollentuna. 
+           Sedan starten 2012 har vi hjälpt våra kunder att hålla sina bilar rena, trygga och körklara året runt. 
+           Vi erbjuder noggrann handtvätt, invändig rengöring, däckskifte och balansering 
+           – alltid med fokus på kvalitet och service. Kontakta oss idag för att boka tid eller ställa frågor!
           </p>
-          <p><strong>Adress:</strong> Camp Nou 6, Sollentuna</p>
+          <p><strong>Adress:</strong> Bäckvägen 17, Sollentuna</p>
           <div className="contact-buttons">
           <a href="tel:085491050" className="contact-btn">📞 08-549 10 50</a>
           <a href="mailto:zaid@meguiars.se" className="contact-btn">✉️ zaid@meguiars.se</a>
@@ -25,7 +52,7 @@ const ContactForm = () => {
         </div>
 
         <div className="contact-form">
-          <form ref={form}>
+          <form ref={form} onSubmit={sendEmail}>
                 <input type="text" name="from_name" placeholder="Namn*" required />
                 <input type="email" name="from_email" placeholder="Email*" required />
                 <input type="text" name="subject" placeholder="Ämne*" required />

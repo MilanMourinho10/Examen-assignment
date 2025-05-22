@@ -10,10 +10,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "",        // ✅ Ditt service-ID
-        "",       // ✅ Ditt template-ID
+        "service_5ofupp8",        // ✅ Ditt service-ID
+        "template_yhfvaio",       // ✅ Ditt template-ID
         form.current,             
-        ""       // ✅ Din public key
+        "EXL_FZ2SN8jDzelxD"       // ✅ Din public key
       )
       .then(
         (result) => {
@@ -34,8 +34,9 @@ const Contact = () => {
         <div className="contact-info">
           <h2>OM MEGUIARS SOLLENTUNA</h2>
           <p>
-            Meguiars Sollentuna AB grundades 2012 och har många års erfarenhet inom
-            bilvård och rekond...
+           Vi är en professionell biltvätt och däckservice i hjärtat av Sollentuna. 
+           Sedan starten 2012 har vi hjälpt våra kunder att hålla sina bilar rena, trygga och körklara året runt. 
+           Vi erbjuder noggrann handtvätt, invändig rengöring, däckskifte och balansering – alltid med fokus på kvalitet och service. Kontakta oss idag för att boka tid eller ställa frågor!
           </p>
           <p>
             <strong>Adress:</strong> Bäckvägen 17, Sollentuna
